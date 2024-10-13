@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoşgeldiniz Canlar!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #007ACC;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 50px;
+            animation: slideIn 2s ease-out;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 20px;
+            animation: popIn 4s ease-out;
+        }
+
+        .flag-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            animation: bounceIn 5s infinite;
+        }
+
+        .flag-container img {
+            width: 120px;
+        }
+
+        .emojis {
+            font-size: 48px;
+            margin-top: 30px;
+            animation: floatEmojis 6s infinite ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes floatEmojis {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hoşgeldiniz Canlar!!!</h1>
+    <h2>Ben Muhammed Yusuf</h2>
+    <p>"Yazılım, hayal gücünün sınırsızlığıdır. Kodu yaz, dünyayı değiştir."</p>
+
+    <div class="flag-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türk Bayrağı">
+    </div>
+
+    <div class="emojis">
+        ✨ 🚀 💻 🎉 🔥
+    </div>
+
+    <footer>
+        &copy; 2024 Muhammed Yusuf Ekinci
+    </footer>
+
+</body>
+</html>
